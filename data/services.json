@@ -1,0 +1,62 @@
+[
+  {
+    "title": "Graphics Design",
+    "icon": "lni-vector",
+    "description": "Brand-ready visuals for campaigns, websites, social media, and digital promotions.",
+    "features": [
+      "Social media creatives",
+      "Brand graphics",
+      "Marketing assets"
+    ]
+  },
+  {
+    "title": "Web Development",
+    "icon": "lni-code-alt",
+    "description": "Responsive websites and web pages that are fast, clean, and simple to maintain.",
+    "features": [
+      "Business websites",
+      "Landing pages",
+      "Frontend development"
+    ]
+  },
+  {
+    "title": "Web Design",
+    "icon": "lni-code",
+    "description": "Modern page layouts focused on clarity, trust, and smooth user experience.",
+    "features": [
+      "UI layouts",
+      "Responsive design",
+      "Website redesigns"
+    ]
+  },
+  {
+    "title": "Print Design",
+    "icon": "lni-pallet",
+    "description": "Professional print-ready designs for offline marketing and business communication.",
+    "features": [
+      "Brochures and flyers",
+      "Business cards",
+      "Posters and banners"
+    ]
+  },
+  {
+    "title": "Best Security",
+    "icon": "lni-lock",
+    "description": "Security-conscious setup and guidance to keep your web presence more dependable.",
+    "features": [
+      "Basic hardening",
+      "SSL guidance",
+      "Safe update practices"
+    ]
+  },
+  {
+    "title": "Business Analysis",
+    "icon": "lni-stats-up",
+    "description": "Clear project thinking that connects your business goals with the right digital plan.",
+    "features": [
+      "Requirement planning",
+      "Workflow mapping",
+      "Growth-focused ideas"
+    ]
+  }
+]

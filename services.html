@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <title>Services | Happy Tech</title>
+  <meta name="description" content="Explore Happy Tech services including web design, web development, graphic design, security, print design, and business analysis." />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <link rel="stylesheet" href="assets/css/bootstrap-5.0.0-beta1.min.css" />
+  <link rel="stylesheet" href="assets/css/LineIcons.2.0.css" />
+  <link rel="stylesheet" href="assets/css/tiny-slider.css" />
+  <link rel="stylesheet" href="assets/css/animate.css" />
+  <link rel="stylesheet" href="assets/css/lindy-uikit.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <style>
+    .services-page-header {
+      background: linear-gradient(rgba(15, 35, 62, 0.72), rgba(15, 35, 62, 0.72)), url('https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg') center center / cover no-repeat fixed;
+      padding: 120px 0 55px;
+      color: #fff;
+    }
+
+    .services-page-header h1 {
+      color: #fff;
+      font-size: 52px;
+      line-height: 1.15;
+      margin-bottom: 18px;
+    }
+
+    .services-page-header p {
+      color: #eef8ff;
+      font-size: 18px;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    .services-card-section {
+      padding: 100px 0 70px;
+      background: #fff;
+    }
+
+    .service-card {
+      background: #fff;
+      border: 1px solid #edf2f7;
+      border-radius: 8px;
+      padding: 34px 28px;
+      height: calc(100% - 30px);
+      margin-bottom: 30px;
+      box-shadow: 0 12px 34px rgba(47, 128, 237, 0.08);
+      transition: all 0.3s ease;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .service-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 4px;
+      background: #2F80ED;
+    }
+
+    .service-card:hover {
+      transform: translateY(-7px);
+      box-shadow: 0 18px 45px rgba(47, 128, 237, 0.14);
+    }
+
+    .service-card .icon {
+      width: 68px;
+      height: 68px;
+      border-radius: 50%;
+      background: #ebf4ff;
+      color: #2F80ED;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 32px;
+      margin-bottom: 24px;
+    }
+
+    .service-card h5 {
+      margin-bottom: 14px;
+    }
+
+    .service-card p {
+      margin-bottom: 18px;
+    }
+
+    .service-card ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .service-card li {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 9px;
+      color: #5f6c7b;
+    }
+
+    .service-card li i {
+      color: #2F80ED;
+      margin-top: 4px;
+    }
+
+    .services-message {
+      background: #f7fbff;
+      border: 1px solid #edf2f7;
+      border-radius: 8px;
+      color: #5f6c7b;
+      padding: 28px;
+      text-align: center;
+      width: 100%;
+    }
+
+    .process-section {
+      padding: 95px 0;
+      background: #f7fbff;
+    }
+
+    .process-step {
+      background: #fff;
+      border: 1px solid #edf2f7;
+      border-radius: 8px;
+      padding: 30px 24px;
+      height: 100%;
+      box-shadow: 0 10px 30px rgba(47, 128, 237, 0.07);
+    }
+
+    .process-step span {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 46px;
+      height: 46px;
+      border-radius: 50%;
+      background: #2F80ED;
+      color: #fff;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+
+    .services-cta {
+      padding: 90px 0;
+      background: #fff;
+    }
+
+    .footer {
+      background: url('https://images.pexels.com/photos/30596223/pexels-photo-30596223.jpeg') center center / cover no-repeat fixed;
+      position: relative;
+      padding: 100px 0 0;
+      color: #fff;
+    }
+
+    .footer::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: #000;
+      opacity: 0.5;
+      z-index: 1;
+    }
+
+    .footer .container {
+      position: relative;
+      z-index: 3;
+    }
+
+    .footer h5 {
+      color: #fff;
+      font-weight: bold;
+      margin-bottom: 1.5rem;
+      position: relative;
+    }
+
+    .footer h5::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: -8px;
+      width: 50px;
+      height: 2px;
+      background: #fff;
+    }
+
+    .arrow-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .arrow-list li {
+      margin-bottom: 12px;
+    }
+
+    .arrow-list li a {
+      color: #fff;
+      font-size: 18px;
+      text-decoration: none;
+      position: relative;
+      padding-left: 28px;
+      transition: .3s ease;
+      display: inline-block;
+    }
+
+    .arrow-list li a::before {
+      content: ">";
+      position: absolute;
+      left: 0;
+      top: 0;
+      font-size: 20px;
+      transition: transform .3s ease;
+    }
+
+    .arrow-list li:hover a {
+      color: #00c4f4;
+    }
+
+    .arrow-list li:hover a::before {
+      transform: translateX(6px);
+    }
+
+    .contact-info-footer p {
+      margin-bottom: 0.8rem;
+      color: #fff;
+    }
+
+    .contact-info-footer i {
+      color: #fff;
+      margin-right: 10px;
+      width: 20px;
+    }
+
+    .social-links {
+      margin-top: 1.5rem;
+    }
+
+    .social-links a {
+      display: inline-block;
+      width: 40px;
+      height: 40px;
+      background: #2F80ED;
+      color: #ecf0f1;
+      text-align: center;
+      line-height: 40px;
+      margin-right: 10px;
+      border-radius: 50%;
+      transition: all 0.3s ease;
+      text-decoration: none;
+    }
+
+    .social-links a:hover {
+      background: #00c4f4;
+      transform: translateY(-3px);
+      color: #fff;
+    }
+
+    .footer-bottom {
+      background: #1a252f;
+      padding: 1.5rem 0;
+      margin-top: 70px;
+      border-top: 1px solid #34495e;
+      position: relative;
+      z-index: 3;
+    }
+
+    .footer-bottom p {
+      margin: 0;
+      color: #c9d3d6;
+      text-align: center;
+    }
+
+    @media (max-width: 767px) {
+      .services-page-header {
+        background-attachment: scroll;
+        padding: 105px 0 45px;
+      }
+
+      .services-page-header h1 {
+        font-size: 36px;
+      }
+
+      .services-card-section,
+      .process-section,
+      .services-cta {
+        padding: 70px 0;
+      }
+
+      .service-card,
+      .process-step {
+        padding: 28px 22px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="preloader">
+    <div class="loader">
+      <div class="spinner">
+        <div class="spinner-container">
+          <div class="spinner-rotator">
+            <div class="spinner-left">
+              <div class="spinner-circle"></div>
+            </div>
+            <div class="spinner-right">
+              <div class="spinner-circle"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <header class="header header-6">
+    <div class="navbar-area">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-12">
+            <nav class="navbar navbar-expand-lg">
+              <a class="navbar-brand" href="index.html">
+                <img src="assets/img/logo/logo.png" alt="Happy Tech Logo" />
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent6" aria-controls="navbarSupportedContent6"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="toggler-icon"></span>
+                <span class="toggler-icon"></span>
+                <span class="toggler-icon"></span>
+              </button>
+
+              <div class="collapse navbar-collapse sub-menu-bar" id="navbarSupportedContent6">
+                <ul id="nav6" class="navbar-nav ms-auto">
+                  <li class="nav-item">
+                    <a href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="active" href="services.html">Services</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="about.html">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="contact.html">Contact</a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="services-page-header text-center">
+    <div class="container">
+      <h1 class="wow fadeInUp" data-wow-delay=".2s">Our Services</h1>
+      <p class="wow fadeInUp" data-wow-delay=".35s">Digital services built for brands that need clean design, reliable websites, useful content, and practical technology support.</p>
+    </div>
+  </section>
+
+  <section class="services-card-section">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-7">
+          <div class="section-title text-center mb-60">
+            <h3 class="mb-15 wow fadeInUp" data-wow-delay=".2s">Specializing In</h3>
+            <p class="wow fadeInUp" data-wow-delay=".3s">Choose the service you need now, or combine them into one complete digital project.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row" id="servicesGrid">
+        <div class="services-message">Loading services...</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="process-section">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-7">
+          <div class="section-title text-center mb-60">
+            <h3 class="mb-15 wow fadeInUp" data-wow-delay=".2s">How we work</h3>
+            <p class="wow fadeInUp" data-wow-delay=".3s">A simple process keeps projects moving from idea to launch.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-4 mb-4 mb-lg-0">
+          <div class="process-step wow fadeInUp" data-wow-delay=".2s">
+            <span>1</span>
+            <h5>Discover</h5>
+            <p>We understand your goals, audience, budget, and timeline before recommending the right approach.</p>
+          </div>
+        </div>
+        <div class="col-lg-4 mb-4 mb-lg-0">
+          <div class="process-step wow fadeInUp" data-wow-delay=".3s">
+            <span>2</span>
+            <h5>Design & Build</h5>
+            <p>We create clear visuals and build responsive pages that work well across devices.</p>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="process-step wow fadeInUp" data-wow-delay=".4s">
+            <span>3</span>
+            <h5>Launch & Support</h5>
+            <p>We help polish, publish, and support the final result so your business can move forward.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="services-cta text-center">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="section-title mb-30">
+            <h3 class="mb-20 wow fadeInUp" data-wow-delay=".2s">Need help choosing a service?</h3>
+            <p class="wow fadeInUp" data-wow-delay=".3s">Share your idea with us and we will suggest the best way to start.</p>
+          </div>
+          <a href="contact.html" class="button button-lg radius-50 wow fadeInUp" data-wow-delay=".4s">Contact Us <i class="lni lni-chevron-right"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+          <div class="contact-info-footer">
+            <a href="index.html">
+              <img alt="Happy Tech" width="100%" height="auto" src="assets/img/logo/logo.png" class="my-4">
+            </a>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-6 mb-4 mb-lg-0 col-6">
+          <h5>Quick Links</h5>
+          <ul class="arrow-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="#">Blogs</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6 mb-4 mb-lg-0 col-6">
+          <h5>Policies</h5>
+          <ul class="arrow-list">
+            <li><a href="#">Term & Conditions</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Refund Return Policy</a></li>
+            <li><a href="#">Sitemap</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <h5>Get In Touch</h5>
+          <div class="contact-info-footer">
+            <p>Our latest news, articles, and offers, we will send to your inbox weekly.</p>
+            <p><i class="fas fa-map"></i>Bhubaneswar -751006, INDIA</p>
+            <p><i class="fas fa-phone"></i>0045939863784</p>
+            <p><i class="fas fa-envelope"></i>.com@gmail.com</p>
+          </div>
+          <div class="social-links">
+            <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" title="YouTube"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-12">
+            <p>&copy; 2026 All rights reserved by Happy Tech</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#" class="scroll-top"> <i class="lni lni-chevron-up"></i> </a>
+
+  <script src="assets/js/bootstrap-5.0.0-beta1.min.js"></script>
+  <script src="assets/js/tiny-slider.js"></script>
+  <script src="assets/js/wow.min.js"></script>
+  <script>
+    const servicesGrid = document.getElementById('servicesGrid');
+    const animationDelays = ['.2s', '.3s', '.4s'];
+
+    function createTextElement(tagName, text) {
+      const element = document.createElement(tagName);
+      element.textContent = text;
+      return element;
+    }
+
+    function renderServices(services) {
+      servicesGrid.innerHTML = '';
+
+      services.forEach((service, index) => {
+        const column = document.createElement('div');
+        column.className = 'col-lg-4 col-md-6';
+
+        const card = document.createElement('div');
+        card.className = 'service-card wow fadeInUp';
+        card.setAttribute('data-wow-delay', animationDelays[index % animationDelays.length]);
+
+        const iconWrap = document.createElement('div');
+        iconWrap.className = 'icon';
+
+        const icon = document.createElement('i');
+        icon.className = `lni ${service.icon}`;
+        iconWrap.appendChild(icon);
+
+        const list = document.createElement('ul');
+        service.features.forEach((feature) => {
+          const item = document.createElement('li');
+          const checkIcon = document.createElement('i');
+          checkIcon.className = 'lni lni-checkmark-circle';
+          item.appendChild(checkIcon);
+          item.appendChild(document.createTextNode(feature));
+          list.appendChild(item);
+        });
+
+        card.appendChild(iconWrap);
+        card.appendChild(createTextElement('h5', service.title));
+        card.appendChild(createTextElement('p', service.description));
+        card.appendChild(list);
+        column.appendChild(card);
+        servicesGrid.appendChild(column);
+      });
+
+      if (typeof WOW === 'function') {
+        new WOW().init();
+      }
+    }
+
+    fetch('data/services.json')
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error('Unable to load services.');
+        }
+        return response.json();
+      })
+      .then(renderServices)
+      .catch(() => {
+        servicesGrid.innerHTML = '<div class="services-message">Services could not be loaded right now.</div>';
+      });
+  </script>
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>
